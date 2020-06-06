@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" contect="IE=edge">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+        <!-- Tab in tab -->
+        <title>Zeno's Chicago Grill</title>
+
+        <!-- Bootstrap 4.0 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <!-- Logo -->
+            <img src="images/ZenosLogo.png" alt="Zeno's Chicago Grill" class="navbar-brand" loading="lazy">
+
+            <!-- Button for small screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="reservation.html" class="nav-link">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <!-- Reservation Form -->
+            <form>
+
+                <!-- Contact Details -->
+                <label for="contactDetails">Your Details</label>
+                <div class="form-group" id="contactDetails">
+                    <div class="row" >
+                        <div class="col">
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <br> <!-- Remove linebreak with padding later -->
+                    <div class="row">
+                        <div class="col">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <input type="tex" class="form-control" id="phone" placeholder="Phone Number">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reservation Data and Time Picker -->
+                <label for="resDateTime">Select Data & Time</label>
+                <div class="form-group" id="resDateTime">
+                    <div class="row">
+                        <div class="col">
+                            <input type="date" class="form-control" id="resDate" placeholder="Date">
+                        </div>
+                        <div class="col">
+                            <input type="time" class="form-control" id="resTime" placeholder="Time">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reservation Options -->
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+
+                            <!-- Party Size Select -->
+                            <label for="partySelect">Party Size</label>
+                            <select class="form-control" id="partySelect">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+    
+                        <!-- Additional Requests -->
+                        <div class="form-group col">
+                            <label for="addRequestCheckboxes">Additional Requests</label>
+                            <div id="addRequestCheckboxes">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="wheelchairCheck">
+                                    <label class="form-check-label" for="wheelchairCheck">Wheelchair</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="highchairCheck">
+                                    <label class="form-check-label" for="highchairCheck">Highchair</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="strollerCheck">
+                                    <label class="form-check-label" for="strollerCheck">Stroller</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="outsideCheck">
+                                    <label class="form-check-label" for="outsideCheck">Outside Seating</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Instructions -->
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="specInstructionText">Special Instructions</label>
+                            <textarea class="form-control" id="specInstructionText" rows="3" placeholder="Optional"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Confirm Reservation Button -->
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary" type="submit">Confirm Reservation</button>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </body>
+</html>
