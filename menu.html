@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" contect="IE=edge">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+        <!-- Tab in tab -->
+        <title>Zeno's Chicago Grill</title>
+
+        <!-- Bootstrap 4.0 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <style>
+            .menuCol {
+                margin: 0 auto 2em;
+                max-width: 435px;
+            }
+
+            .menuImg {
+                max-width: 435px;
+                max-height: 250px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <!-- Logo -->
+            <img src="images/ZenosLogo.png" alt="Zeno's Chicago Grill" class="navbar-brand" loading="lazy">
+
+            <!-- Button for small screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Menu Container -->
+        <div class="container">
+            <h2>Entrees</h2>
+            <br>
+
+            <!-- First Row -->
+            <div class="row justify-content-around">
+                <div class="menuCol col-4 col-sm-6">
+                    <img class="menuImg" src="images/spaghetti-meatballs.jpg" alt="Spaghetti & Meatballs">
+                    <h4>Spaghetti & Meatballs - $13.99</h4>
+                    <p>Zeno's family recipe pomodoro sauce, two hand-rolled meatballs, over a bed of fresh spaghetti</p>
+                </div>
+                <div class="menuCol col-4 col-sm-6">
+                    <img class="menuImg" src="images/fettucine-alfredo.jpg" alt="Fettucine Alfredo">
+                    <h4>Fettucine Alfredo - $16.99</h4>
+                    <p>Fettuccine Alfredo with wood-grilled chicken, sauteed mushrooms and peas</p>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="row justify-content-around">
+                <div class="menuCol col-4 col-sm-6">
+                    <img class="menuImg" src="images/Lasagne.jpg" alt="Lasagne">
+                    <h4>Lasagne - $14.99</h4>
+                    <p>Fresh pasta layered with our pomodoro sauce, meat sauce, ricotta, romano and mozzarella cheese</p>
+                </div>
+                <div class="menuCol col-4 col-sm-6">
+                    <img class="menuImg" src="images/lobster-ravioli.jpg" alt="Lobster Ravioli">
+                    <h4>Lobster Ravioli - $18.99</h4>
+                    <p>Ravioli stuffed with lobster and romano in our white wine cream sauce topped with diced tomatoes</p>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
