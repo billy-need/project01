@@ -12,6 +12,12 @@
         <!-- Bootstrap 4.0 CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Set favicon -->
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+
     </head>
 
     <body>
@@ -44,26 +50,26 @@
         <div class="container">
 
             <!-- Reservation Form -->
-            <form>
+            <form action="confirmation.php" action="GET">
 
                 <!-- Contact Details -->
                 <label for="contactDetails">Your Details</label>
                 <div class="form-group" id="contactDetails">
                     <div class="row" >
                         <div class="col">
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
                         </div>
                     </div>
                     <br> <!-- Remove linebreak with padding later -->
                     <div class="row">
                         <div class="col">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="col">
-                            <input type="tex" class="form-control" id="phone" placeholder="Phone Number">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
                         </div>
                     </div>
                 </div>
@@ -73,10 +79,10 @@
                 <div class="form-group" id="resDateTime">
                     <div class="row">
                         <div class="col">
-                            <input type="date" class="form-control" id="resDate" placeholder="Date">
+                            <input type="date" class="form-control" id="resDate" name="resDate" placeholder="Date" required>
                         </div>
                         <div class="col">
-                            <input type="time" class="form-control" id="resTime" placeholder="Time">
+                            <input type="time" class="form-control" id="resTime" name="resTime" placeholder="Time" required>
                         </div>
                     </div>
                 </div>
@@ -88,7 +94,7 @@
 
                             <!-- Party Size Select -->
                             <label for="partySelect">Party Size</label>
-                            <select class="form-control" id="partySelect">
+                            <select class="form-control" id="partySelect" name="partySelect">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!-- Metadata -->
         <meta charset="UTF-8">
@@ -11,15 +11,14 @@
 
         <!-- Bootstrap 4.0 CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
 
         <!-- Set favicon -->
         <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
-    </head>
-
+        </head>
     <body>
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -28,7 +27,7 @@
 
             <!-- Button for small screens -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navigation Links -->
@@ -37,51 +36,38 @@
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="menu.html" class="nav-link">Menu</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="reservation.html" class="nav-link">Reservation</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Menu Container -->
         <div class="container">
-            <h2>Entrees</h2>
-            <hr>
-            <br>
-
-            <!-- First Row -->
-            <div class="row justify-content-around">
-                <div class="menuCol col-4 col-sm-6">
-                    <img class="menuImg" src="images/spaghetti-meatballs.jpg" alt="Spaghetti & Meatballs">
-                    <h4>Spaghetti & Meatballs - $13.99</h4>
-                    <p>Zeno's family recipe pomodoro sauce, two hand-rolled meatballs, over a bed of fresh spaghetti</p>
-                </div>
-                <div class="menuCol col-4 col-sm-6">
-                    <img class="menuImg" src="images/fettucine-alfredo.jpg" alt="Fettucine Alfredo">
-                    <h4>Fettucine Alfredo - $16.99</h4>
-                    <p>Fettuccine Alfredo with wood-grilled chicken, sauteed mushrooms and peas</p>
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron">
+                        <h2 class="display-4">Rerservation has been confirmed!</h2>
+                        <p class="lead">Congraulations, your reservation for <?php echo $_GET["partySelect"]; ?> people on <?php echo $_GET["resDate"]; ?> at <?php echo $_GET["resTime"]; ?> has been made.</p>
+                        <hr class="my-4">
+                        <p>Reservation for <?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></p>
+                        <p>Confirmation email sent to <?php echo $_GET["email"]; ?>.</p>
+                        <p>Call back Phone number entered <?php echo $_GET["phone"]; ?></p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Second Row -->
-            <div class="row justify-content-around">
-                <div class="menuCol col-4 col-sm-6">
-                    <img class="menuImg" src="images/Lasagne.jpg" alt="Lasagne">
-                    <h4>Lasagne - $14.99</h4>
-                    <p>Fresh pasta layered with our pomodoro sauce, meat sauce, ricotta, romano and mozzarella cheese</p>
-                </div>
-                <div class="menuCol col-4 col-sm-6">
-                    <img class="menuImg" src="images/lobster-ravioli.jpg" alt="Lobster Ravioli">
-                    <h4>Lobster Ravioli - $18.99</h4>
-                    <p>Ravioli stuffed with lobster and romano in our white wine cream sauce topped with diced tomatoes</p>
-                </div>
-            </div>
+            <h5>Raw Results</h5>
+            <p>First Name: <?php echo $_GET["firstName"]; ?></p>
+            <p>Last Name: <?php echo $_GET["lastName"]; ?></p>
+            <p>Email: <?php echo $_GET["email"]; ?></p>
+            <p>Phone: <?php echo $_GET["phone"]; ?></p>
+            <p>Reservation Date: <?php echo $_GET["resDate"]; ?></p>
+            <p>Reservatoin Time: <?php echo $_GET["resTime"]; ?></p>
+            <p>Party Size: <?php echo $_GET["partySelect"]; ?></p>
         </div>
-
 
     </body>
 </html>
