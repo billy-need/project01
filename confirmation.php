@@ -25,7 +25,7 @@
         <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
     </head>
-    <body>
+    <body onload="confirmationLoad()">
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <!-- Logo -->
@@ -57,12 +57,17 @@
                 <div class="col">
                     <div class="jumbotron">
                         <h2 class="display-4">Rerservation has been confirmed!</h2>
-                        <p class="lead">Congraulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been made.</p>
+                        <p class="lead">Congraulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been set.</p>
                         <p id="resFooter">*Please arrive 15 minutes prior to your reservation time.</p>
                         <hr class="my-4">
-                        <p>A confirmation email sent to <b><?php echo $_GET["email"]; ?></b>.</p>
-                        <p>Requested: <?php echo $_GET["wheelchairCheck"]; ?> <?php echo $_GET["highchairCheck"]; ?> <?php echo $_GET["strollerCheck"]; ?> <?php echo $_GET["outdoorCheck"]; ?></p>
-                        <p>Special Instructions: <?php echo $_GET["specInstructionText"]; ?></p>
+                        <p>A confirmation email was sent to <b><?php echo $_GET["email"]; ?></b>.</p>
+                        <p id="resOptions">Requests: 
+                            <div id="wheelchairCheck"><?php echo $_GET["wheelchairCheck"]; ?></div>
+                            <div id="highchairCheck"><?php echo $_GET["highchairCheck"]; ?></div>
+                            <div id="strollerCheck"><?php echo $_GET["strollerCheck"]; ?></div>
+                            <div id="outdoorCheck"><?php echo $_GET["outdoorCheck"]; ?></div>
+                        </p>
+                        <p id="specText">Special Instructions: <i><div id="specInstructionText"><?php echo $_GET["specInstructionText"]; ?></div></i></p>
                     </div>
                 </div>
             </div>
@@ -81,5 +86,12 @@
             <p>Outdoor Seating: <?php echo $_GET["specInstructionText"]; ?></p>
         </div>
 
+        <!-- jQuery, Popper.js, Bootstrap 4.0 JS Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <!-- My scripts -->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
