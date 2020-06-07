@@ -3,6 +3,11 @@ function confirmationLoad(){
     checkText();
 }
 
+function reservationLoad(){
+    setDate();
+    setTime();
+}
+
 function checkOptions() {
     var displayOptions;
 
@@ -59,3 +64,35 @@ function checkText() {
     }
 }
 
+function setDate() {
+    var date = new Date();
+    var y = date.getFullYear();
+    var m = ("0" + (date.getMonth() + 1)).slice(-2);
+    var d = ("0" + date.getDate()).slice(-2);
+
+    var today = y + "-" + m + "-" + d;
+
+    document.getElementById("resDate").defaultValue = today;
+}
+
+function setTime() {
+    var date = new Date();
+    date.setHours( date.getHours() + 1 );
+
+    var h = ("0" + date.getHours()).slice(-2);
+    var m = ("0" + date.getMinutes()).slice(-2);
+
+    var time = h + ":" + m;
+
+    document.getElementById("resTime").defaultValue = time;
+}
+
+function formatDate() {
+    var today = new Date().toLocaleDateString();
+    document.getElementById("resDate").defaultValue = today;
+}
+
+function formatTime() {
+    var time = new Date().toLocaleTimeString();
+    document.getElementById("resTime").defaultValue = time;
+}

@@ -58,32 +58,18 @@
                     <div class="jumbotron">
                         <h2 class="display-4">Rerservation has been confirmed!</h2>
                         <p class="lead">Congraulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been set.</p>
-                        <p id="resFooter">*Please arrive 15 minutes prior to your reservation time.</p>
                         <hr class="my-4">
-                        <p>A confirmation email was sent to <b><?php echo $_GET["email"]; ?></b>.</p>
-                        <p id="resOptions">Requests: 
+                        <p>A confirmation email was sent to <b><?php echo $_GET["email"]; ?></b>. Please arrive 15 minutes prior to your reservation time.</p>
+                        <p id="resOptions"><h5>Requests: </h5>
                             <div id="wheelchairCheck"><?php echo $_GET["wheelchairCheck"]; ?></div>
                             <div id="highchairCheck"><?php echo $_GET["highchairCheck"]; ?></div>
                             <div id="strollerCheck"><?php echo $_GET["strollerCheck"]; ?></div>
                             <div id="outdoorCheck"><?php echo $_GET["outdoorCheck"]; ?></div>
                         </p>
-                        <p id="specText">Special Instructions: <i><div id="specInstructionText"><?php echo $_GET["specInstructionText"]; ?></div></i></p>
+                        <p id="specText"><h5>Special Instructions: </h5><i><div id="specInstructionText"><?php echo $_GET["specInstructionText"]; ?></div></i></p>
                     </div>
                 </div>
             </div>
-            <h5>Raw Results</h5>
-            <p>First Name: <?php echo $_GET["firstName"]; ?></p>
-            <p>Last Name: <?php echo $_GET["lastName"]; ?></p>
-            <p>Email: <?php echo $_GET["email"]; ?></p>
-            <p>Phone: <?php echo $_GET["phone"]; ?></p>
-            <p>Reservation Date: <?php echo $_GET["resDate"]; ?></p>
-            <p>Reservatoin Time: <?php echo $_GET["resTime"]; ?></p>
-            <p>Party Size: <?php echo $_GET["partySelect"]; ?></p>
-            <p>Wheelchair: <?php echo $_GET["wheelchairCheck"]; ?></p>
-            <p>Highchair: <?php echo $_GET["highchairCheck"]; ?></p>
-            <p>Stroller: <?php echo $_GET["strollerCheck"]; ?></p>
-            <p>Outdoor Seating: <?php echo $_GET["outdoorCheck"]; ?></p>
-            <p>Outdoor Seating: <?php echo $_GET["specInstructionText"]; ?></p>
         </div>
 
         <!-- jQuery, Popper.js, Bootstrap 4.0 JS Scripts -->
