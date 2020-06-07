@@ -16,9 +16,11 @@
         <link rel="stylesheet" href="css/style.css">
 
         <style>
-            #resFooter {
-                font-size: xs;
+            #wheelchairCheck, #highchairCheck, #strollerCheck, #outdoorCheck, #resOptions, #specText {
+                display: none;
             }
+
+
         </style>
 
         <!-- Set favicon -->
@@ -60,16 +62,21 @@
                         <p class="lead">Congraulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been set.</p>
                         <hr class="my-4">
                         <p>A confirmation email was sent to <b><?php echo $_GET["email"]; ?></b>. Please arrive 15 minutes prior to your reservation time.</p>
-                        <p id="resOptions"><h5>Requests: </h5>
-                            <div id="wheelchairCheck"><?php echo $_GET["wheelchairCheck"]; ?></div>
-                            <div id="highchairCheck"><?php echo $_GET["highchairCheck"]; ?></div>
-                            <div id="strollerCheck"><?php echo $_GET["strollerCheck"]; ?></div>
-                            <div id="outdoorCheck"><?php echo $_GET["outdoorCheck"]; ?></div>
-                        </p>
-                        <p id="specText"><h5>Special Instructions: </h5><i><div id="specInstructionText"><?php echo $_GET["specInstructionText"]; ?></div></i></p>
+                        <div id="resOptions">
+                            <p ><h5>Requests: </h5>
+                                <div id="wheelchairCheck"><?php echo $_GET["wheelchairCheck"]; ?></div>
+                                <div id="highchairCheck"><?php echo $_GET["highchairCheck"]; ?></div>
+                                <div id="strollerCheck"><?php echo $_GET["strollerCheck"]; ?></div>
+                                <div id="outdoorCheck"><?php echo $_GET["outdoorCheck"]; ?></div>
+                            </p>
+                        </div>
+                        <div id="specText">
+                        <p><h5>Special Instructions: </h5><i><div id="specInstructionText"><?php echo $_GET["specInstructionText"]; ?></div></i></p>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- jQuery, Popper.js, Bootstrap 4.0 JS Scripts -->
