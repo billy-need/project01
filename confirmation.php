@@ -15,10 +15,16 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
 
+        <style>
+            #resFooter {
+                font-size: xs;
+            }
+        </style>
+
         <!-- Set favicon -->
         <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
-        </head>
+    </head>
     <body>
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -51,11 +57,12 @@
                 <div class="col">
                     <div class="jumbotron">
                         <h2 class="display-4">Rerservation has been confirmed!</h2>
-                        <p class="lead">Congraulations, your reservation for <?php echo $_GET["partySelect"]; ?> people on <?php echo $_GET["resDate"]; ?> at <?php echo $_GET["resTime"]; ?> has been made.</p>
+                        <p class="lead">Congraulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been made.</p>
+                        <p id="resFooter">*Please arrive 15 minutes prior to your reservation time.</p>
                         <hr class="my-4">
-                        <p>Reservation for <?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></p>
-                        <p>Confirmation email sent to <?php echo $_GET["email"]; ?>.</p>
-                        <p>Call back Phone number entered <?php echo $_GET["phone"]; ?></p>
+                        <p>A confirmation email sent to <b><?php echo $_GET["email"]; ?></b>.</p>
+                        <p>Requested: <?php echo $_GET["wheelchairCheck"]; ?> <?php echo $_GET["highchairCheck"]; ?> <?php echo $_GET["strollerCheck"]; ?> <?php echo $_GET["outdoorCheck"]; ?></p>
+                        <p>Special Instructions: <?php echo $_GET["specInstructionText"]; ?></p>
                     </div>
                 </div>
             </div>
@@ -67,6 +74,11 @@
             <p>Reservation Date: <?php echo $_GET["resDate"]; ?></p>
             <p>Reservatoin Time: <?php echo $_GET["resTime"]; ?></p>
             <p>Party Size: <?php echo $_GET["partySelect"]; ?></p>
+            <p>Wheelchair: <?php echo $_GET["wheelchairCheck"]; ?></p>
+            <p>Highchair: <?php echo $_GET["highchairCheck"]; ?></p>
+            <p>Stroller: <?php echo $_GET["strollerCheck"]; ?></p>
+            <p>Outdoor Seating: <?php echo $_GET["outdoorCheck"]; ?></p>
+            <p>Outdoor Seating: <?php echo $_GET["specInstructionText"]; ?></p>
         </div>
 
     </body>

@@ -52,6 +52,12 @@
             <!-- Reservation Form -->
             <form action="confirmation.php" action="GET">
 
+                <!-- Page Header -->
+                <div class="row justify-content-center">
+                    <header><h1>Make A Reservation Now</h1></header>
+                </div>
+                <hr>
+
                 <!-- Contact Details -->
                 <label for="contactDetails">Your Details</label>
                 <div class="form-group" id="contactDetails">
@@ -115,20 +121,20 @@
                             <label for="addRequestCheckboxes">Additional Requests</label>
                             <div id="addRequestCheckboxes">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="wheelchairCheck">
+                                    <input class="form-check-input" type="checkbox" id="wheelchairCheck" name="wheelchairCheck">
                                     <label class="form-check-label" for="wheelchairCheck">Wheelchair</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="highchairCheck">
+                                    <input class="form-check-input" type="checkbox" id="highchairCheck" name="highchairCheck">
                                     <label class="form-check-label" for="highchairCheck">Highchair</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="strollerCheck">
+                                    <input class="form-check-input" type="checkbox" id="strollerCheck" name="strollerCheck">
                                     <label class="form-check-label" for="strollerCheck">Stroller</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="outsideCheck">
-                                    <label class="form-check-label" for="outsideCheck">Outside Seating</label>
+                                    <input class="form-check-input" type="checkbox" id="outsideCheck" name="outdoorCheck">
+                                    <label class="form-check-label" for="outdoorCheck">Outdoor Seating</label>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +146,7 @@
                     <div class="col">
                         <div class="form-group">
                             <label for="specInstructionText">Special Instructions</label>
-                            <textarea class="form-control" id="specInstructionText" rows="3" placeholder="Optional"></textarea>
+                            <textarea class="form-control" id="specInstructionText" name="specInstructionText" rows="3" placeholder="Optional"></textarea>
                         </div>
                     </div>
                 </div>
