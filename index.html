@@ -22,12 +22,14 @@
 
     <body>
         <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Logo -->
-            <img src="images/ZenosLogo.png" alt="Zeno's Chicago Grill" class="navbar-brand" loading="lazy">
-
+            <a  class="navbar-brand" href="index.html">
+                <img src="images/ZenosLogo.png" alt="Zeno's Chicago Grill" loading="lazy">
+            </a>
+            
             <!-- Button for small screens -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -35,13 +37,13 @@
             <div class="collapse navbar-collapse" id="navbarLinks">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" aria-haspopup="true" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="menu.html" class="nav-link">Menu</a>
+                        <a href="menu.html" aria-haspopup="true" class="nav-link">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a href="reservation.html" class="nav-link">Reservation</a>
+                        <a href="reservation.html" aria-haspopup="true" class="nav-link">Reservation</a>
                     </li>
                 </ul>
             </div>
@@ -51,9 +53,10 @@
 
             <!-- Page Header -->
             <div class="row justify-content-center">
-                <header><h1>Experience the Taste of Chicago-Inspired Italian</h1></header>
+                <header><h1>Experience Chicago-Inspired Italian</h1></header>
             </div>
             <hr>
+            <br>
 
             <!-- Feature Carousel -->
             <div class="row">

@@ -1,3 +1,62 @@
+.navbar-brand img {
+    max-width: 300px;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+}
+
+.navbar-nav {
+    margin: 0.5rem;
+}
+
+.nav-item {
+    margin: 2rem;
+}
+
+ .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-collapse {
+    align-items: center;
+}
+
+
+  .nav-tabs {
+    border-bottom: 1px solid #eceeef;
+  }
+  
+  .nav-tabs .nav-item {
+    margin-bottom: -1px;
+  }
+  
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+  }
+  
+  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: #f7f7f9 #f7f7f9 #eceeef;
+  }
+  
+  .nav-tabs .nav-link.disabled {
+    color: #919aa1;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    color: #55595c;
+    background-color: #fff;
+    border-color: #eceeef #eceeef #fff;
+  }
+  
+  .nav-tabs .dropdown-menu {
+    margin-top: -1px;
+  }
+
+
 .menuCol {
     margin: 0 auto 2em;
     max-width: 435px;
@@ -6,4 +65,17 @@
 .menuImg {
     max-width: 435px;
     max-height: 250px;
+}
+
+#wheelchairCheck, #highchairCheck, #strollerCheck, #outdoorCheck, #resOptions, #specText {
+    display: none;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 1rem;
+    font-family:  "Brush Script MT", "Brush Script Std", cursive;
 }

@@ -15,40 +15,34 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
 
-        <style>
-            #wheelchairCheck, #highchairCheck, #strollerCheck, #outdoorCheck, #resOptions, #specText {
-                display: none;
-            }
-
-
-        </style>
-
         <!-- Set favicon -->
         <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
     </head>
     <body onload="confirmationLoad()">
         <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Logo -->
-            <img src="images/ZenosLogo.png" alt="Zeno's Chicago Grill" class="navbar-brand" loading="lazy">
-
+            <a  class="navbar-brand" href="index.html">
+                <img src="images/ZenosLogo.png" alt="Zeno's Chicago Grill" loading="lazy">
+            </a>
+            
             <!-- Button for small screens -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarLinks">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="menu.html" class="nav-link">Menu</a>
-                    </li>
                     <li class="nav-item active">
-                        <a href="reservation.html" class="nav-link">Reservation</a>
+                        <a href="index.html" aria-haspopup="true" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" aria-haspopup="true" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reservation.html" aria-haspopup="true" class="nav-link">Reservation</a>
                     </li>
                 </ul>
             </div>
@@ -58,8 +52,8 @@
             <div class="row">
                 <div class="col">
                     <div class="jumbotron">
-                        <h2 class="display-4">Rerservation has been confirmed!</h2>
-                        <p class="lead">Congraulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been set.</p>
+                        <Header><h2 class="display-4">Rerservation has been confirmed!</h2></Header>
+                        <p class="lead">Congratulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been set.</p>
                         <hr class="my-4">
                         <p>A confirmation email was sent to <b><?php echo $_GET["email"]; ?></b>. Please arrive 15 minutes prior to your reservation time.</p>
                         <div id="resOptions">
