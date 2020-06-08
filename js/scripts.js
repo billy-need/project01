@@ -68,18 +68,3 @@ function setTime() {
 
     document.getElementById("resTime").defaultValue = time;
 }
-
-// function formatDate() {
-//     var today = new Date().toLocaleDateString();
-//     document.getElementById("resDate").defaultValue = today;
-
-
-//     var today = document.getElementById("resDate").innerHTML;
-//     document.getElementById("resDate").innerHTML = today.toLocaleDateString
-
-// }
-
-// function formatTime() {
-//     var time = new Date().toLocaleTimeString();
-//     document.getElementById("resTime").defaultValue = time;
-// }
