@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" contect="IE=edge">
         <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-        <!-- Tab in tab -->
+        <!-- Title in tab -->
         <title>Zeno's Chicago Grill</title>
 
         <!-- Bootstrap 4.0 CSS -->
