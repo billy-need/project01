@@ -14,48 +14,9 @@
     margin: 2rem;
 }
 
- .nav-link {
-    color: rgba(255, 255, 255, 0.5);
-}
-
 .navbar-collapse {
     align-items: center;
 }
-
-
-  .nav-tabs {
-    border-bottom: 1px solid #eceeef;
-  }
-  
-  .nav-tabs .nav-item {
-    margin-bottom: -1px;
-  }
-  
-  .nav-tabs .nav-link {
-    border: 1px solid transparent;
-  }
-  
-  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-    border-color: #f7f7f9 #f7f7f9 #eceeef;
-  }
-  
-  .nav-tabs .nav-link.disabled {
-    color: #919aa1;
-    background-color: transparent;
-    border-color: transparent;
-  }
-  
-  .nav-tabs .nav-link.active,
-  .nav-tabs .nav-item.show .nav-link {
-    color: #55595c;
-    background-color: #fff;
-    border-color: #eceeef #eceeef #fff;
-  }
-  
-  .nav-tabs .dropdown-menu {
-    margin-top: -1px;
-  }
-
 
 .menuCol {
     margin: 0 auto 2em;
@@ -79,3 +40,19 @@ header {
     padding: 1rem;
     font-family:  "Brush Script MT", "Brush Script Std", cursive;
 }
+
+.jumbotron {
+    padding: 1rem;
+    margin: 5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.carousel {
+    padding: 1rem;
+    margin: auto;
+}
+
+

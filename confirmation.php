@@ -35,13 +35,13 @@
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarLinks">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="index.html" aria-haspopup="true" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="menu.html" aria-haspopup="true" class="nav-link">Menu</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="reservation.html" aria-haspopup="true" class="nav-link">Reservation</a>
                     </li>
                 </ul>
@@ -53,7 +53,7 @@
                 <div class="col">
                     <div class="jumbotron">
                         <Header><h2 class="display-4">Rerservation has been confirmed!</h2></Header>
-                        <p class="lead">Congratulations <b><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></b>, your reservation for <b><?php echo $_GET["partySelect"]; ?></b> people on <b><?php echo $_GET["resDate"]; ?></b> at <b><?php echo $_GET["resTime"]; ?></b> has been set.</p>
+                        <p class="lead">Congratulations <span class="bold"><?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></span>, your reservation for <span class="bold"><?php echo $_GET["partySelect"]; ?></span> people on <span class="bold"><?php echo $_GET["resDate"]; ?></span> at <span class="bold"><?php echo $_GET["resTime"]; ?></span> has been set.</p>
                         <hr class="my-4">
                         <p>A confirmation email was sent to <b><?php echo $_GET["email"]; ?></b>. Please arrive 15 minutes prior to your reservation time.</p>
                         <div id="resOptions">

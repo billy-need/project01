@@ -14,25 +14,25 @@ function checkOptions() {
     if(document.getElementById("wheelchairCheck").innerHTML == "on") {
         displayOptions = true;
         document.getElementById("wheelchairCheck").style.display = "block";
-        document.getElementById("wheelchairCheck").innerHTML = "-Wheelchair";
+        document.getElementById("wheelchairCheck").innerHTML = "Wheelchair";
     }
 
     if(document.getElementById("highchairCheck").innerHTML == "on") {
         displayOptions = true;
         document.getElementById("highchairCheck").style.display = "block";
-        document.getElementById("highchairCheck").innerHTML = "-Highchair";
+        document.getElementById("highchairCheck").innerHTML = "Highchair";
     }
 
     if(document.getElementById("strollerCheck").innerHTML == "on") {
         displayOptions = true;
         document.getElementById("strollerCheck").style.display = "block";
-        document.getElementById("strollerCheck").innerHTML = "-Stroller";
+        document.getElementById("strollerCheck").innerHTML = "Stroller";
     }
 
     if(document.getElementById("outdoorCheck").innerHTML == "on") {
         displayOptions = true;
         document.getElementById("outdoorCheck").style.display = "block";
-        document.getElementById("outdoorCheck").innerHTML = "-Outdoor Seating";
+        document.getElementById("outdoorCheck").innerHTML = "Outdoor Seating";
     }
 
     if (displayOptions) {
