@@ -55,4 +55,10 @@ header {
     margin: auto;
 }
 
+#resForm {
+    margin-bottom: 2em;
+}
 
+.footButton {
+    margin: 2em;
+}
