@@ -1,13 +1,16 @@
+//Confirmation page load scripts
 function confirmationLoad(){
     checkOptions();
     checkText();
 }
 
+//Reservation page load scripts
 function reservationLoad(){
     setDate();
     setTime();
 }
 
+//Check to see which options were selected in the reservation form to display on confirmation page
 function checkOptions() {
     var displayOptions;
 
@@ -40,12 +43,14 @@ function checkOptions() {
     }
 }
 
+//Check to see if special instructions were given in the reservation form to display on confirmation page
 function checkText() {
     if(document.getElementById("specInstructionText").innerHTML != "") {
         document.getElementById("specText").style.display = "block";
     }
 }
 
+//Set the date on the form to today's date
 function setDate() {
     var date = new Date();
     var y = date.getFullYear();
@@ -57,6 +62,7 @@ function setDate() {
     document.getElementById("resDate").defaultValue = today;
 }
 
+//Set the time on the reservation form to 1 hour from now
 function setTime() {
     var date = new Date();
     date.setHours( date.getHours() + 1 );
